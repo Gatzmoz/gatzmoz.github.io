@@ -1,1 +1,0 @@
-# gatzmoz.github.io
