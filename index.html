@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Tailwind via @tailwindcss/browser -->
+		<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+		<!-- AOS (Animate On Scroll) CSS -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+		/>
+		<!-- Google Fonts: Poppins -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Banjir</title>
+		<style type="text/tailwindcss">
+			* {
+				font-family: 'Poppins', sans-serif;
+			}
+			/* Parallax backgrounds + overlay */
+			.bg-section {
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-attachment: fixed;
+			}
+			.bg-overlay::before {
+				content: '';
+				position: absolute;
+				inset: 0;
+				background-color: rgba(0, 0, 0, 0.5);
+			}
+		</style>
+	</head>
+	<body class="relative">
+		<!-- LANDING SECTION -->
+		<section
+			id="home"
+			class="relative flex flex-col items-center justify-center h-screen bg-section bg-overlay"
+			style="
+				background-image: url('https://awsimages.detik.net.id/community/media/visual/2025/01/18/banjir-di-bandar-lampung_169.jpeg?w=1200');
+			"
+		>
+			<!-- Dark overlay is handled via .bg-overlay::before -->
+			<div
+				class="relative z-10 text-center text-white"
+				data-aos="fade-up"
+				data-aos-duration="1000"
+			>
+				<h1 class="text-6xl font-bold mb-2">Banjir</h1>
+				<h2 class="text-2xl font-medium">Kelompok 7</h2>
+				<h3 class="text-xl mt-2">Kapita Selekta - RA</h3>
+			</div>
+			<!-- Scroll Down Button -->
+			<div
+				class="relative z-10 mt-8"
+				data-aos="fade-up"
+				data-aos-duration="1500"
+			>
+				<a
+					href="#teams"
+					class="px-6 py-3 border border-white text-white rounded hover:bg-white hover:text-black transition-colors duration-300"
+				>
+					Scroll Down
+				</a>
+			</div>
+		</section>
+
+		<!-- TEAMS SECTION -->
+		<section
+			id="teams"
+			class="relative flex flex-col items-center justify-center h-screen bg-section bg-overlay"
+			style="background-image: url('bg-2.jpg')"
+		>
+			<div
+				class="relative z-10 text-center text-white"
+				data-aos="fade-up"
+				data-aos-duration="2000"
+			>
+				<h1 class="text-4xl font-bold mb-4">Anggota Kelompok</h1>
+				<p class="text-2xl font-medium mb-2">Restu Tri Wijaya</p>
+				<p class="text-2xl font-medium mb-2">Gilang Rama Syaputra</p>
+				<p class="text-2xl font-medium mb-2">Nikita Aulia Titania</p>
+				<p class="text-2xl font-medium">Yemima Eminta Br. Tarigan</p>
+			</div>
+		</section>
+
+		<!-- POSTER SECTION -->
+		<section
+			id="poster"
+			class="relative flex flex-col items-center justify-center h-screen bg-section bg-overlay"
+			style="
+				background-image: url('https://akcdn.detik.net.id/visual/2022/10/28/situasi-banjir-lampung-selatan_169.jpeg?w=1200');
+			"
+		>
+			<div
+				class="relative z-10 text-center text-white"
+				data-aos="fade-up"
+				data-aos-duration="2000"
+			>
+				<h1 class="text-4xl font-bold mb-6">Poster</h1>
+				<!-- Replace src with your actual poster image link -->
+				<img
+					src="https://via.placeholder.com/600x400?text=Poster+Goes+Here"
+					alt="Poster"
+					class="max-w-md mx-auto shadow-lg hover:shadow-2xl transition-shadow rounded"
+				/>
+			</div>
+		</section>
+
+		<!-- REFERENSI SECTION -->
+		<section
+			id="referensi"
+			class="flex flex-col items-center justify-center min-h-screen bg-white py-20"
+			style="
+				background: linear-gradient(
+						rgba(0, 0, 0, 0.5),
+						rgba(0, 0, 0, 0.5)
+					),
+					url('https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1634025439/01ggc2p7stxhqemypesp1yrtaq.jpg');
+				background-size: cover;
+			"
+			data-aos="fade-up"
+		>
+			<h1 class="text-4xl font-bold mb-8 text-white">Referensi</h1>
+			<!-- Example reference links – add your own or style them however you'd like -->
+			<ul class="list-disc text-lg space-y-4 px-4 text-gray-700">
+				<li>
+					<a href="#" class="underline hover:text-blue-600 transition"
+						>https://example.com/referensi-1</a
+					>
+				</li>
+				<li>
+					<a href="#" class="underline hover:text-blue-600 transition"
+						>https://example.com/referensi-2</a
+					>
+				</li>
+				<li>
+					<a href="#" class="underline hover:text-blue-600 transition"
+						>https://example.com/referensi-3</a
+					>
+				</li>
+			</ul>
+		</section>
+
+		<!-- AOS (Animate On Scroll) JS -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+	</body>
+</html>
